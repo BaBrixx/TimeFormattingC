@@ -16,7 +16,6 @@
 
 int main() {
     int secondsInput, weeks, days, hours, minutes, seconds;
-    char week[5] = "weeks";
 
     printf("Type the amount of seconds you want translated: ");
     scanf("%d", &secondsInput);
@@ -29,7 +28,11 @@ int main() {
     seconds = secondsInput % SECONDS_MINUTE;
     
     // Printing result
-    printf("%d seconds translates to %d weeks, %d days, %d hours, %d minutes and %d seconds.\n", secondsInput, weeks, days, hours, minutes, seconds);
+    printf("%d seconds translates to %d weeks, %d days, %d hours, %d minutes and %d seconds.\n", 
+            secondsInput, 
+            weeks, days, 
+            hours, minutes, 
+            seconds);
 
     return EXIT_SUCCESS;
 }
